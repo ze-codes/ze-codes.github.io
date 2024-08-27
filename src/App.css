@@ -1,0 +1,350 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.App-header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0 1rem; /* Reduced bottom padding */
+  text-align: left;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0 0 0.5rem; /* Added bottom margin to h1 */
+}
+
+.App-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+main {
+  padding: 0rem 0; 
+}
+
+.portfolio,
+.blog,
+.hobbies,
+.vesta-learnings {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.portfolio > section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  flex-direction: column;
+}
+
+/* Add this new rule */
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.experience-details h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+}
+
+.experience-details h4 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+.experience-details ul {
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.experience-details li {
+  margin-bottom: 0.5rem;
+}
+
+.learn-more-button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #333;
+}
+
+.defi-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.defi-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 0;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.defi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.defi-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.defi-card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.defi-card h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+}
+
+.defi-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .defi-cards {
+    flex-direction: column;
+  }
+
+  .defi-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Navigation styles */
+.App-header nav {
+  margin-top: 0.5rem; /* Reduced top margin */
+}
+
+.App-header nav a {
+  margin-right: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.App-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Blog styles */
+.blog-link {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+.blog h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.blog section {
+  margin-bottom: 3rem;
+}
+
+.blog ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.blog li {
+  margin-bottom: 1rem;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-right: 10px;
+  font-weight: 300;
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.article h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.article-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.article p {
+  margin-bottom: 1rem;
+}
+
+/* ... rest of the styles ... */
+
+.experience-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+/* ... (rest of the styles) ... */
+
+.hobbies {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.hobbies h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.hobbies section {
+  margin-bottom: 3rem;
+}
+
+.hobbies h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.hobbies p {
+  margin-bottom: 1rem;
+}
+
+/* ... (rest of the styles) ... */
+
+/* Add this media query for larger screens */
+@media (min-width: 768px) {
+  .experience-item {
+    flex-direction: row;
+  }
+
+  .company-logo {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+/* ... (rest of the existing styles) ... */
+
+/* Updated Carousel styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* ... (rest of the styles) ... */
