@@ -39,10 +39,10 @@ function Hobbies() {
         <p>I played competitive golf growing up and still play recreationally.</p>
         <ul>
           <li>
-            <a href="https://sports.sohu.com/20091028/n267797689.shtml/">Winner of 2010 Volvo China Junior Championship</a>
+            <a href="https://sports.sohu.com/20091028/n267797689.shtml/">Winner of 2011 Volvo China Junior Championship</a>
           </li>
           <li>
-            <a href="https://sports.qq.com/a/20120413/000665.htm">Participated in 2011 Volvo China Open (European Tour)</a>
+            <a href="https://sports.qq.com/a/20120413/000665.htm">Participated in 2012 Volvo China Open (European Tour)</a>
           </li>
           <li>
             Won many junior tournaments in China and Canada
