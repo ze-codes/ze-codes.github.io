@@ -18,7 +18,9 @@ function Home() {
     y: number,
     vx: number,
     vy: number,
-    accelerated: boolean
+    accelerated: boolean,
+    initialX: number,
+    initialY: number
   }>>([]);
   const skillsWindowRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number>();
@@ -26,13 +28,19 @@ function Home() {
   useEffect(() => {
     if (skillsWindowRef.current) {
       const { width, height } = skillsWindowRef.current.getBoundingClientRect();
-      setBubbles(skills.map(() => ({
-        x: Math.random() * (width - 150),
-        y: Math.random() * (height - 60),
-        vx: 0,
-        vy: 0,
-        accelerated: false
-      })));
+      setBubbles(skills.map(() => {
+        const x = Math.random() * (width - 150);
+        const y = Math.random() * (height - 60);
+        return {
+          x,
+          y,
+          vx: 0,
+          vy: 0,
+          accelerated: false,
+          initialX: x,
+          initialY: y
+        };
+      }));
     }
     animationRef.current = requestAnimationFrame(animate);
     return () => {
@@ -44,17 +52,28 @@ function Home() {
     if (skillsWindowRef.current) {
       const { width, height } = skillsWindowRef.current.getBoundingClientRect();
       setBubbles(prevBubbles => prevBubbles.map(bubble => {
-        let { x, y, vx, vy, accelerated } = bubble;
-        x += vx;
-        y += vy;
-        if (x <= 0 || x >= width - 150) vx = -vx;
-        if (y <= 0 || y >= height - 60) vy = -vy;
+        let { x, y, vx, vy, accelerated, initialX, initialY } = bubble;
+        
         if (accelerated) {
-          vx *= 0.95; // Slower deceleration
-          vy *= 0.95; // Slower deceleration
-          accelerated = Math.abs(vx) > 0.1 || Math.abs(vy) > 0.1;
+          x += vx;
+          y += vy;
+          if (x <= 0 || x >= width - 150) vx = -vx;
+          if (y <= 0 || y >= height - 60) vy = -vy;
+          
+          vx *= 0.95;
+          vy *= 0.95;
+          
+          const distanceToInitial = Math.sqrt((x - initialX)**2 + (y - initialY)**2);
+          if (distanceToInitial < 1 && Math.abs(vx) < 0.1 && Math.abs(vy) < 0.1) {
+            accelerated = false;
+            x = initialX;
+            y = initialY;
+            vx = 0;
+            vy = 0;
+          }
         }
-        return { x, y, vx, vy, accelerated };
+        
+        return { x, y, vx, vy, accelerated, initialX, initialY };
       }));
     }
     animationRef.current = requestAnimationFrame(animate);
