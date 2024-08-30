@@ -1,14 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="App-header">
       <h1>Ze Chen</h1>
       <nav>
-        <Link to="/">Portfolio</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/hobbies">Hobbies</Link>
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/experience">Experience</NavLink>
+        <NavLink to="/vesta-learnings">Learnings from Vesta</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </nav>
     </header>
   );

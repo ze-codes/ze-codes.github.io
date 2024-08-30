@@ -2,10 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Portfolio from './components/Portfolio';
+import Home from './components/Home';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 import VestaLearnings from './components/VestaLearnings';
 import Blog from './components/Blog';
-import Hobbies from './components/Hobbies';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,10 +17,12 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Portfolio />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/vesta-learnings" element={<VestaLearnings />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/hobbies" element={<Hobbies />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
