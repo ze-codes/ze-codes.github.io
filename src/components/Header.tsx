@@ -11,6 +11,7 @@ function Header() {
         <NavLink to="/vesta-learnings">Learnings from Vesta</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/hobbies">Hobbies</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>
     </header>

@@ -17,7 +17,7 @@ function Experience() {
                 <li>Co-founded a stablecoin protocol on Arbitrum, which is Ethereum's leading Layer 2</li>
                 <li>Raised <a href="https://medium.com/@VestaFinance/announcing-our-angel-round-a75b25a67a7d">US$11.6m</a></li>
                 <li>Reached US$70m in net asset value at peak, consistently above $20m even in bad market conditiions</li>
-                <li>The first stablecoin to have <a href="https://curia.vestafinance.xyz/t/rfc-new-interest-rate-framework/274">market-aware interest rate mechanism</a></li>
+                <li>The first stablecoin to have <a href="https://curia.vestafinance.xyz/t/rfc-new-interest-rate-framework/274">real-time market-trailing interest rate mechanism</a></li>
                 <li>Generated US$6m+ in profits over 1.5 years</li>
                 <li>Designed the <a href="https://vestafinance.xyz/">v1</a> and <a href="https://vesta-app-v2.vercel.app/">v2</a> UI for the Vesta app</li>
                 <li>Grew Discord and Twitter community <a href="https://x.com/vestafinance">from 0 to 30,000 members in 3 months</a></li>

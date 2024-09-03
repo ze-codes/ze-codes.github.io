@@ -438,3 +438,68 @@ section {
   border-color: #999;
   box-shadow: 0 0 0 2px rgba(153,153,153,0.2);
 }
+
+/* Add these styles at the end of your App.css file */
+
+.hobbies {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.hobbies h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.hobbies p {
+  margin-bottom: 1rem;
+}
+
+.hobbies ul {
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.hobbies li {
+  margin-bottom: 0.5rem;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  /* max-width: 600px; */
+  margin: 2rem auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}

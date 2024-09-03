@@ -9,6 +9,7 @@ import VestaLearnings from './components/VestaLearnings';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Hobbies from './components/Hobbies';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/vesta-learnings" element={<VestaLearnings />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/hobbies" element={<Hobbies />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
