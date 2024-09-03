@@ -31,7 +31,7 @@ function VestaLearnings() {
           <li>Navigated complex stakeholder landscape of engineering, legal, investors and users to implement critical pricing change, achieving 8x revenue growth while preserving 95% of deposits.</li>
           <li>Collaborated with the Arbitrum ecosystem strategically, resulting in <a href="https://curia.vestafinance.xyz/t/rfc-proposal-for-utilizing-arb-airdrop-to-foster-growth-and-establish-vesta-as-a-key-player-on-arbitrum/222">$5M in profits</a></li>
           <li>Pioneered the first <a href="https://curia.vestafinance.xyz/t/rfc-new-interest-rate-framework/274">market-aware interest rate mechanism</a> for a stablecoin, navigated complex stakeholder landscape of engineering, legal, investors and users to implement the design, achieving 8x revenue growth while preserving 95% of deposits.</li>
-          <li>Pioneered a collateral strategy that returned yield to users<a href="https://curia.vestafinance.xyz/t/passed-glp-collateral-listing/64">rewards program</a> for the users, resulting in a 70% increase in TVL and $500,000 in profits</li>
+          <li>Pioneered a collateral strategy that <a href="https://curia.vestafinance.xyz/t/passed-glp-collateral-listing/64">returns yield to users</a>, resulting in 70% increase in TVL and $500,000 in profits</li>
 
         </ul>
       </section>
