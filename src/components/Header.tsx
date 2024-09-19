@@ -1,13 +1,15 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header className="App-header">
       <h1>Ze Chen</h1>
       <nav>
-        <NavLink to="/" end>Home</NavLink>
-        <NavLink to="/experience">Experience</NavLink>
+        <NavLink to="/" end>
+          Home
+        </NavLink>
+        <NavLink to="/experiences">Experiences</NavLink>
         <NavLink to="/vesta-learnings">Learnings from Vesta</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/blog">Blog</NavLink>

@@ -1,6 +1,8 @@
-/* Add this at the top of your App.css file */
-body, input, textarea, button {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+body,
+input,
+textarea,
+button {
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
@@ -24,14 +26,8 @@ body {
   text-align: left;
 }
 
-.App-header h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin: 0 0 0.5rem;
-}
-
 main {
-  padding: 0rem 0; 
+  padding: 0rem 0;
 }
 
 .content-wrapper {
@@ -40,12 +36,31 @@ main {
   padding: 2rem 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
 h2 {
   font-size: 1.8rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #eee;
   padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #666;
+  margin: 0 0 1rem 0;
 }
 
 .experience-item {
@@ -66,25 +81,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.experience-details h3 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin: 0 0 0.5rem 0;
-}
-
-.experience-details h4 {
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: #666;
-  margin: 0 0 1rem 0;
-}
-
-.experience-details ul {
+ul {
   padding-left: 20px;
   margin-bottom: 1.5rem;
 }
 
-.experience-details li {
+li {
   margin-bottom: 0.5rem;
 }
 
@@ -123,7 +125,7 @@ h2 {
 
 .defi-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .defi-card-image {
@@ -193,20 +195,6 @@ h2 {
 
 .home section {
   margin-bottom: 2rem;
-}
-
-.home h2 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-
-.home ul {
-  padding-left: 20px;
-}
-
-.home li {
-  margin-bottom: 0.5rem;
 }
 
 .cta-buttons {
@@ -290,7 +278,7 @@ h2 {
 
 .skill-bubble:hover {
   z-index: 10;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -333,26 +321,6 @@ h2 {
   }
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
 section {
   margin-bottom: 2rem;
 }
@@ -385,7 +353,7 @@ section {
 
 .blog-list-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .blog-link {
@@ -436,7 +404,7 @@ section {
 .blog-order-control select:focus {
   outline: none;
   border-color: #999;
-  box-shadow: 0 0 0 2px rgba(153,153,153,0.2);
+  box-shadow: 0 0 0 2px rgba(153, 153, 153, 0.2);
 }
 
 /* Add these styles at the end of your App.css file */
@@ -445,25 +413,6 @@ section {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0;
-}
-
-.hobbies h2 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-
-.hobbies p {
-  margin-bottom: 1rem;
-}
-
-.hobbies ul {
-  padding-left: 20px;
-  margin-bottom: 1.5rem;
-}
-
-.hobbies li {
-  margin-bottom: 0.5rem;
 }
 
 .carousel {
