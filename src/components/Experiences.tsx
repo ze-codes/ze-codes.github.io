@@ -67,13 +67,19 @@ function Experiences() {
               <h4>Software Engineer & Product Manager</h4>
               <ul>
                 <li>
-                  Worked as an integration engineer/product manager at Zapper,
+                  Worked as a full-stack engineer/product manager at Zapper,
                   one of the leading user-facing apps in Ethereum
                 </li>
-                <li>Integrated 100+ DeFi protocols into the platform</li>
+                <li>Integrated 100+ DeFi protocols into the platform, keeping up with the explosive growth of product usage</li>
                 <li>
                   Designed the swap feature for the Zapper platform, which did
-                  $5B of volume in the first year
+                  $5B of volume in the first year, increasing session length by 15% in one month
+                </li>
+                <li>
+                  Led development of an integration framework, decreasing integration time by 40%, accelerating product growth
+                </li>
+                <li>
+                  Spearheaded targeted initiatives to penetrate Chinese market, resulting in 10% DAU increase over two months
                 </li>
               </ul>
             </div>

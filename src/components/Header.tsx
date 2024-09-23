@@ -10,7 +10,6 @@ function Header() {
           Home
         </NavLink>
         <NavLink to="/experiences">Experiences</NavLink>
-        <NavLink to="/vesta-learnings">Learnings from Vesta</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/hobbies">Hobbies</NavLink>
