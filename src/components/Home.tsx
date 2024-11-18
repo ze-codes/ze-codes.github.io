@@ -144,15 +144,15 @@ function Home() {
 
         <section className="key-experiences">
           <div className="achievement-grid">
-            <Link to="/experience" className="achievement-item">
+            <Link to="/experiences" className="achievement-item">
               <div className="achievement-number">$11.6M</div>
               <div className="achievement-description">raised</div>
             </Link>
-            <Link to="/experience" className="achievement-item">
+            <Link to="/experiences" className="achievement-item">
               <div className="achievement-number">$70M</div>
               <div className="achievement-description">managed</div>
             </Link>
-            <Link to="/experience" className="achievement-item">
+            <Link to="/experiences" className="achievement-item">
               <div className="achievement-number">$6M</div>
               <div className="achievement-description">
                 revenue generated in 2 years
