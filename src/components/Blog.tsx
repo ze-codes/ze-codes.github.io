@@ -43,6 +43,11 @@ function Blog() {
 
 const blogPosts = [
   {
+    title: "MicroStrategy's Bitcoin Accumulation: What You Should Know",
+    date: "2024-11-18",
+    link: "https://zespace.notion.site/MicroStrategy-s-Bitcoin-Accumulation-What-You-Should-Know-1435df8e68ee8051b11adb9539e8e1ca",
+  },
+  {
     title: "Moonshot: Bringing Memecoin Trading to the Masses",
     date: "2024-11-01",
     link: "https://zespace.notion.site/Moonshot-Bringing-Memecoin-Trading-to-the-Masses-1315df8e68ee80ac98dff470b26b8ecd",
