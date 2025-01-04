@@ -43,6 +43,12 @@ function Blog() {
 
 const blogPosts = [
   {
+    title:
+      "Navigating the Evolving Landscape of DeFi Taxation: Potential New IRS Regulations",
+    date: "2024-12-30",
+    link: "https://zespace.notion.site/Navigating-the-Evolving-Landscape-of-DeFi-Taxation-Potential-New-IRS-Regulations-16a5df8e68ee80899f1dcdf28cbcf888",
+  },
+  {
     title: "MicroStrategy's Bitcoin Accumulation: What You Should Know",
     date: "2024-11-18",
     link: "https://zespace.notion.site/MicroStrategy-s-Bitcoin-Accumulation-What-You-Should-Know-1435df8e68ee8051b11adb9539e8e1ca",
