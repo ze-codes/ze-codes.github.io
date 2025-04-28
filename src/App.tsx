@@ -28,7 +28,7 @@ function FadeInWrapper({ children }: { children: React.ReactNode }) {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ze-codes.github.io/">
       <div className="App">
         <Header />
         <main>

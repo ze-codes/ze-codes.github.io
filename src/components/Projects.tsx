@@ -8,7 +8,7 @@ function Projects() {
           <div className="defi-cards">
             <a href="http://tradebook.work/" className="defi-card">
               <img
-                src="/images/tradebook.png"
+                src="images/tradebook.png"
                 alt="Tradebook Logo"
                 className="defi-card-image"
               />
@@ -22,7 +22,7 @@ function Projects() {
               className="defi-card"
             >
               <img
-                src="/images/mstr-btc.jpg"
+                src="images/mstr-btc.jpg"
                 alt="MicroStrategy BTC"
                 className="defi-card-image"
               />
@@ -36,7 +36,7 @@ function Projects() {
               className="defi-card"
             >
               <img
-                src="/images/emu-protocol.png"
+                src="images/emu-protocol.png"
                 alt="Emu Protocol"
                 className="defi-card-image"
               />
@@ -50,7 +50,7 @@ function Projects() {
               className="defi-card"
             >
               <img
-                src="/images/safe-partial-liquidation.png"
+                src="images/safe-partial-liquidation.png"
                 alt="Safe Partial Liquidation"
                 className="defi-card-image"
               />
@@ -64,7 +64,7 @@ function Projects() {
               className="defi-card"
             >
               <img
-                src="/images/de-liquidation-framework.png"
+                src="images/de-liquidation-framework.png"
                 alt="De-liquidation Framework"
                 className="defi-card-image"
               />
