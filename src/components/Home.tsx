@@ -1,17 +1,26 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  useCallback,
+  useMemo,
+} from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
-  const skills = [
-    "DeFi Protocol Design",
-    "Full-stack Web Development",
-    "Product Management",
-    "Data-driven Strategy",
-    "User Experience Research",
-    "User Interface Design",
-    "Business Development",
-    "Systematic PMF Exploration",
-  ];
+  const skills = useMemo(
+    () => [
+      "DeFi Protocol Design",
+      "Full-stack Web Development",
+      "Product Management",
+      "Data-driven Strategy",
+      "User Experience Research",
+      "User Interface Design",
+      "Business Development",
+      "Systematic PMF Exploration",
+    ],
+    []
+  );
 
   const [bubbles, setBubbles] = useState<
     Array<{
@@ -27,32 +36,7 @@ function Home() {
   const skillsWindowRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number>();
 
-  useEffect(() => {
-    if (skillsWindowRef.current) {
-      const { width, height } = skillsWindowRef.current.getBoundingClientRect();
-      setBubbles(
-        skills.map(() => {
-          const x = Math.random() * (width - 150);
-          const y = Math.random() * (height - 60);
-          return {
-            x,
-            y,
-            vx: 0,
-            vy: 0,
-            accelerated: false,
-            initialX: x,
-            initialY: y,
-          };
-        })
-      );
-    }
-    animationRef.current = requestAnimationFrame(animate);
-    return () => {
-      if (animationRef.current) cancelAnimationFrame(animationRef.current);
-    };
-  }, []);
-
-  const animate = () => {
+  const animate = useCallback(() => {
     if (skillsWindowRef.current) {
       const { width, height } = skillsWindowRef.current.getBoundingClientRect();
       setBubbles((prevBubbles) =>
@@ -89,7 +73,32 @@ function Home() {
       );
     }
     animationRef.current = requestAnimationFrame(animate);
-  };
+  }, []);
+
+  useEffect(() => {
+    if (skillsWindowRef.current) {
+      const { width, height } = skillsWindowRef.current.getBoundingClientRect();
+      setBubbles(
+        skills.map(() => {
+          const x = Math.random() * (width - 150);
+          const y = Math.random() * (height - 60);
+          return {
+            x,
+            y,
+            vx: 0,
+            vy: 0,
+            accelerated: false,
+            initialX: x,
+            initialY: y,
+          };
+        })
+      );
+    }
+    animationRef.current = requestAnimationFrame(animate);
+    return () => {
+      if (animationRef.current) cancelAnimationFrame(animationRef.current);
+    };
+  }, [animate, skills]);
 
   const handleSkillClick = (index: number) => {
     setBubbles((prevBubbles) =>

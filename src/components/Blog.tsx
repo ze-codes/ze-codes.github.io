@@ -64,22 +64,6 @@ const blogPosts = [
     link: "https://zespace.notion.site/Photon-How-a-Four-Week-Project-Generated-134M-in-10-Months-1275df8e68ee80e9b972cb6d35ab14d1",
   },
   {
-    title: "Product Challenge - Design a Feature for a Crypto Wallet",
-    date: "2024-10-21",
-    link: "https://zespace.notion.site/Product-Challenge-Design-a-Feature-for-a-Crypto-Wallet-1265df8e68ee801fb76ae0fd8491c759",
-  },
-  {
-    title:
-      "Product Challenge - Improve CEX's On-Chain Deposit and Withdrawal UX",
-    date: "2024-10-15",
-    link: "https://zespace.notion.site/Product-Challenge-Improve-CEX-s-On-Chain-Deposit-and-Withdrawal-UX-1205df8e68ee80f79afcd9ce57c88890",
-  },
-  {
-    title: "Coinbase Stablecoin Product Challenge",
-    date: "2024-05-15",
-    link: "https://www.notion.so/Coinbase-Stablecoin-Product-Challenge-fd44d2aa518d4bbb8ed4d22835bfc1b5",
-  },
-  {
     title: "What are Zero-Knowledge Proofs? Intuition for Beginners",
     date: "2020-04-28",
     link: "https://medium.com/@ze_chen/what-are-zero-knowledge-proofs-intuition-for-beginners-ef4dadccb61e",

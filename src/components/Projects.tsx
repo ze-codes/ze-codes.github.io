@@ -6,6 +6,17 @@ function Projects() {
       <div className="content-wrapper">
         <section className="other-works-defi">
           <div className="defi-cards">
+            <a href="http://tradebook.work/" className="defi-card">
+              <img
+                src="/images/tradebook.png"
+                alt="Tradebook Logo"
+                className="defi-card-image"
+              />
+              <div className="defi-card-content">
+                <h3>Tradebook</h3>
+                <p>A social layer for DeFi</p>
+              </div>
+            </a>
             <a
               href="https://ze-codes.github.io/mstr-vs-btc"
               className="defi-card"

@@ -5,23 +5,8 @@ function Contact() {
     <div className="contact">
       <div className="content-wrapper">
         <section className="contact-info">
-          <p>
-            I'm always open to new opportunities and collaborations. Feel free
-            to reach out!
-          </p>
+          <p>Feel free to reach out at:</p>
           <ul>
-            <li>
-              <a href="mailto:contact@over-drive.xyz">contact@over-drive.xyz</a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/zscchen/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </li>
             <li>
               <a
                 href="https://x.com/ze_thinking"

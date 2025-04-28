@@ -106,12 +106,13 @@ li {
 
 .defi-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .defi-card {
-  flex: 1;
+  flex: 0 0 calc(33.333% - 1rem);
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
@@ -295,16 +296,14 @@ li {
 @media (max-width: 768px) {
   .defi-cards {
     flex-direction: column;
+    gap: 1rem;
   }
-
   .defi-card {
-    margin-bottom: 1rem;
+    flex: 0 0 100%;
   }
-
   .achievement-grid {
     flex-direction: column;
   }
-
   .achievement-item {
     margin-bottom: 1rem;
   }
@@ -314,7 +313,6 @@ li {
   .experience-item {
     flex-direction: row;
   }
-
   .company-logo {
     margin-right: 2rem;
     margin-bottom: 0;
