@@ -12,7 +12,6 @@ import Home from "./components/Home";
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
 import VestaLearnings from "./components/VestaLearnings";
-import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hobbies from "./components/Hobbies";
@@ -62,14 +61,6 @@ function App() {
               element={
                 <FadeInWrapper>
                   <VestaLearnings />
-                </FadeInWrapper>
-              }
-            />
-            <Route
-              path="/blog"
-              element={
-                <FadeInWrapper>
-                  <Blog />
                 </FadeInWrapper>
               }
             />

@@ -474,12 +474,12 @@ section {
 
 /* Add this at the end of the file */
 .fade-in {
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.2s ease-in;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   to {
     opacity: 1;

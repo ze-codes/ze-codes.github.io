@@ -11,7 +11,13 @@ function Header() {
         </NavLink>
         <NavLink to="/experiences">Experiences</NavLink>
         <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
+        <a
+          href="https://zespace.notion.site/efc2c95d163e480792cc347d32d5d7fa?v=6e86c74bb342444fb54f6b502591a94a&source=copy_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blog
+        </a>
         <NavLink to="/hobbies">Hobbies</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>

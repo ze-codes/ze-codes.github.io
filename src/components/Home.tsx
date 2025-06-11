@@ -145,25 +145,6 @@ function Home() {
           </p>
         </section>
 
-        <section className="key-experiences">
-          <div className="achievement-grid">
-            <Link to="/experiences" className="achievement-item">
-              <div className="achievement-number">$11.6M</div>
-              <div className="achievement-description">raised</div>
-            </Link>
-            <Link to="/experiences" className="achievement-item">
-              <div className="achievement-number">$70M</div>
-              <div className="achievement-description">managed</div>
-            </Link>
-            <Link to="/experiences" className="achievement-item">
-              <div className="achievement-number">$6M</div>
-              <div className="achievement-description">
-                revenue generated in 2 years
-              </div>
-            </Link>
-          </div>
-        </section>
-
         <section className="cta-buttons">
           <Link to="/experiences" className="cta-button">
             View Experiences
