@@ -139,15 +139,9 @@ function Home() {
         </section>
         <section className="professional-summary">
           <p>
-            Innovative fintech product manager with a proven track record of
-            driving 0-1 growth. Combines technical expertise, business acumen,
-            and a unique background in professional sports to deliver impactful
-            solutions that engage and retain users.
-          </p>
-          <p>
-            Actively exploring new opportunities in fintech, AI, and sports
-            software. Hoping to join forward-thinking teams to create impactful
-            products.
+            Builder with a proven track record of driving 0-1 growth. Combines
+            technical expertise, product sense, and a unique background in
+            professional sports to build impactful products.
           </p>
         </section>
 

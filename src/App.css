@@ -415,15 +415,36 @@ section {
 
 .carousel {
   position: relative;
-  width: 100%;
-  /* max-width: 600px; */
+  max-width: 800px;
   margin: 2rem auto;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 66.42%; /* Aspect ratio (2848 / 4288 * 100) */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 1.2rem;
 }
 
 .carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .carousel-button {

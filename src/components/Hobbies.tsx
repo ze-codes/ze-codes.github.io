@@ -62,26 +62,26 @@ function Hobbies() {
           <button onClick={prevImage} className="carousel-button prev">
             &#10094;
           </button>
-
-          {isImageLoading && (
-            <div className="loading-indicator">Loading...</div>
-          )}
-
-          <img
-            key={currentImageIndex}
-            src={golfImages[currentImageIndex]}
-            alt={`Golf ${currentImageIndex + 1}`}
-            className="carousel-image"
-            onLoad={() => setIsImageLoading(false)}
-            onError={() => {
-              setIsImageLoading(false);
-              console.error(
-                "Failed to load image:",
-                golfImages[currentImageIndex]
-              );
-            }}
-            style={{ display: isImageLoading ? "none" : "block" }}
-          />
+          <div className="image-container">
+            {isImageLoading && (
+              <div className="loading-indicator">Loading...</div>
+            )}
+            <img
+              key={currentImageIndex}
+              src={golfImages[currentImageIndex]}
+              alt={`Golf ${currentImageIndex + 1}`}
+              className="carousel-image"
+              onLoad={() => setIsImageLoading(false)}
+              onError={() => {
+                setIsImageLoading(false);
+                console.error(
+                  "Failed to load image:",
+                  golfImages[currentImageIndex]
+                );
+              }}
+              style={{ display: isImageLoading ? "none" : "block" }}
+            />
+          </div>
           <button onClick={nextImage} className="carousel-button next">
             &#10095;
           </button>
