@@ -1,0 +1,70 @@
+:root {
+  /* Dark theme inspired by Brittany Chiang's portfolio */
+
+  /* Background colors */
+  --color-bg: #0a192f;
+  --color-bg-light: #112240;
+  --color-bg-lighter: #1d3461;
+
+  /* Text colors */
+  --color-text: #ccd6f6;
+  --color-text-muted: #8892b0;
+  --color-text-bright: #e6f1ff;
+
+  /* Accent - Teal/Cyan */
+  --color-primary: #64ffda;
+  --color-primary-muted: rgba(100, 255, 218, 0.1);
+
+  /* Borders */
+  --color-border: #233554;
+
+  /* Typography */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
+  --font-size-6xl: 4.5rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  --max-width-content: 900px;
+  --nav-width: 48px;
+  --sidebar-offset: 200px;
+
+  /* Effects */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  --shadow-card: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}

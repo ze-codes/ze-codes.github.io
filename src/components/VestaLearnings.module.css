@@ -1,0 +1,88 @@
+.page {
+  padding-bottom: var(--space-16);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  margin-bottom: var(--space-8);
+  transition: all var(--transition-fast);
+}
+
+.backLink svg {
+  width: 16px;
+  height: 16px;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.header {
+  margin-bottom: var(--space-12);
+}
+
+.banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+}
+
+.header h1 {
+  margin-bottom: var(--space-4);
+}
+
+.header p {
+  font-size: var(--font-size-lg);
+}
+
+.header a {
+  color: var(--color-primary);
+}
+
+.section {
+  margin-bottom: var(--space-12);
+}
+
+.section h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text-bright);
+  margin-bottom: var(--space-6);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.list li::before {
+  content: "▹";
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.list a {
+  color: var(--color-primary);
+}
+
+.list a:hover {
+  text-decoration: underline;
+}

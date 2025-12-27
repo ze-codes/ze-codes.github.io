@@ -1,159 +1,64 @@
-import React, {
-  useState,
-  useRef,
-  useEffect,
-  useCallback,
-  useMemo,
-} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./Home.module.css";
+
+const skills = [
+  "DeFi Protocol Design",
+  "Full-stack Development",
+  "Product Management",
+  "UI Design",
+  "Business Development",
+];
 
 function Home() {
-  const skills = useMemo(
-    () => [
-      "DeFi Protocol Design",
-      "Full-stack Web Development",
-      "Product Management",
-      "Data-driven Strategy",
-      "User Experience Research",
-      "User Interface Design",
-      "Business Development",
-      "Systematic PMF Exploration",
-    ],
-    []
-  );
-
-  const [bubbles, setBubbles] = useState<
-    Array<{
-      x: number;
-      y: number;
-      vx: number;
-      vy: number;
-      accelerated: boolean;
-      initialX: number;
-      initialY: number;
-    }>
-  >([]);
-  const skillsWindowRef = useRef<HTMLDivElement>(null);
-  const animationRef = useRef<number>();
-
-  const animate = useCallback(() => {
-    if (skillsWindowRef.current) {
-      const { width, height } = skillsWindowRef.current.getBoundingClientRect();
-      setBubbles((prevBubbles) =>
-        prevBubbles.map((bubble) => {
-          let { x, y, vx, vy, accelerated, initialX, initialY } = bubble;
-
-          if (accelerated) {
-            x += vx;
-            y += vy;
-            if (x <= 0 || x >= width - 150) vx = -vx;
-            if (y <= 0 || y >= height - 60) vy = -vy;
-
-            vx *= 0.95;
-            vy *= 0.95;
-
-            const distanceToInitial = Math.sqrt(
-              (x - initialX) ** 2 + (y - initialY) ** 2
-            );
-            if (
-              distanceToInitial < 1 &&
-              Math.abs(vx) < 0.1 &&
-              Math.abs(vy) < 0.1
-            ) {
-              accelerated = false;
-              x = initialX;
-              y = initialY;
-              vx = 0;
-              vy = 0;
-            }
-          }
-
-          return { x, y, vx, vy, accelerated, initialX, initialY };
-        })
-      );
-    }
-    animationRef.current = requestAnimationFrame(animate);
-  }, []);
-
-  useEffect(() => {
-    if (skillsWindowRef.current) {
-      const { width, height } = skillsWindowRef.current.getBoundingClientRect();
-      setBubbles(
-        skills.map(() => {
-          const x = Math.random() * (width - 150);
-          const y = Math.random() * (height - 60);
-          return {
-            x,
-            y,
-            vx: 0,
-            vy: 0,
-            accelerated: false,
-            initialX: x,
-            initialY: y,
-          };
-        })
-      );
-    }
-    animationRef.current = requestAnimationFrame(animate);
-    return () => {
-      if (animationRef.current) cancelAnimationFrame(animationRef.current);
-    };
-  }, [animate, skills]);
-
-  const handleSkillClick = (index: number) => {
-    setBubbles((prevBubbles) =>
-      prevBubbles.map((bubble, i) => {
-        if (i === index) {
-          const angle = Math.random() * 2 * Math.PI;
-          const speed = 10 + Math.random() * 10; // Faster initial speed
-          return {
-            ...bubble,
-            vx: Math.cos(angle) * speed,
-            vy: Math.sin(angle) * speed,
-            accelerated: true,
-          };
-        }
-        return bubble;
-      })
-    );
-  };
-
   return (
-    <div className="home">
-      <div className="content-wrapper">
-        <section className="featured-skills">
-          <div className="skills-window" ref={skillsWindowRef}>
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="skill-bubble"
-                style={{
-                  transform: `translate(${bubbles[index]?.x}px, ${bubbles[index]?.y}px)`,
-                }}
-                onClick={() => handleSkillClick(index)}
-              >
-                {skill}
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className="professional-summary">
-          <p>
-            Builder with a proven track record of driving 0-1 growth. Combines
-            technical expertise, product sense, and a unique background in
-            professional sports to build impactful products.
-          </p>
-        </section>
+    <div className={styles.home}>
+      <section className={styles.hero}>
+        <p className={styles.greeting}>Hi, my name is</p>
+        <h1 className={styles.name}>Ze Chen</h1>
+        <h2 className={styles.tagline}>I build things in web3</h2>
+        <p className={styles.description}>
+          I'm a builder with a proven track record of driving 0-1 growth.
+          Combining technical expertise, product sense, and a unique background
+          in professional sports to build impactful products. Currently focused
+          on DeFi protocol design and full-stack development.
+        </p>
 
-        <section className="cta-buttons">
-          <Link to="/experiences" className="cta-button">
-            View Experiences
+        <div className={styles.skills}>
+          {skills.map((skill) => (
+            <span key={skill} className={styles.skillTag}>
+              {skill}
+            </span>
+          ))}
+        </div>
+
+        <div className={styles.cta}>
+          <Link to="/experiences" className={styles.ctaButton}>
+            View Experience
+            <svg
+              className={styles.arrow}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </Link>
-          <Link to="/contact" className="cta-button">
-            Contact Me
+          <Link to="/projects" className={styles.ctaButton}>
+            See Projects
+            <svg
+              className={styles.arrow}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </Link>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 }

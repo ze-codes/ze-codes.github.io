@@ -1,21 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./VestaLearnings.module.css";
 
 function VestaLearnings() {
   return (
-    <div className="vesta-learnings">
-      <img
-        src="/images/Vesta Banner.png"
-        alt="Vesta Banner"
-        className="vesta-banner"
-      />
+    <div className={styles.page}>
+      <Link to="/experiences" className={styles.backLink}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Back to Experience
+      </Link>
 
-      <p>
-        <a href="https://vesta-app-one.vercel.app/">Vesta Finance</a> was a
-        project that I co-founded in 2022.
-      </p>
-      <section>
-        <h3>Before launch</h3>
-        <ul>
+      <header className={styles.header}>
+        <img
+          src="/images/Vesta Banner.png"
+          alt="Vesta Banner"
+          className={styles.banner}
+        />
+        <h1>Vesta Finance</h1>
+        <p>
+          <a href="https://vesta-app-one.vercel.app/">Vesta Finance</a> was a
+          project that I co-founded in 2022.
+        </p>
+      </header>
+
+      <section className={styles.section}>
+        <h2>Before Launch</h2>
+        <ul className={styles.list}>
           <li>
             Identified market trend and saw a need for a multi-collateral
             stablecoin
@@ -47,8 +59,11 @@ function VestaLearnings() {
             in a week, raising $10m from token sale
           </li>
         </ul>
-        <h3>After launch</h3>
-        <ul>
+      </section>
+
+      <section className={styles.section}>
+        <h2>After Launch</h2>
+        <ul className={styles.list}>
           <li>
             Scaled the team to 10 people across marketing, engineering, and
             operations
@@ -65,14 +80,8 @@ function VestaLearnings() {
           </li>
           <li>
             Led business development efforts, drove product defining
-            partnerships such as strong deals with{" "}
-            {/* <a href="https://curia.vestafinance.xyz/t/passed-olympus-vesta-partnership-formalisation/52"> */}
-            Olympus
-            {/* </a> */}
-            and{" "}
-            {/* <a href="https://curia.vestafinance.xyz/t/passed-glp-collateral-listing/64"> */}
-            GMX
-            {/* </a> */}, directly resulting in $1m+ in profits
+            partnerships such as strong deals with Olympus and GMX, directly
+            resulting in $1m+ in profits
           </li>
           <li>
             Navigated complex stakeholder landscape of engineering, legal,
@@ -80,32 +89,21 @@ function VestaLearnings() {
             8x revenue growth while preserving 95% of deposits.
           </li>
           <li>
-            Collaborated with the Arbitrum ecosystem strategically, resulting in{" "}
-            {/* <a href="https://curia.vestafinance.xyz/t/rfc-proposal-for-utilizing-arb-airdrop-to-foster-growth-and-establish-vesta-as-a-key-player-on-arbitrum/222"> */}
+            Collaborated with the Arbitrum ecosystem strategically, resulting in
             $5M in profits
-            {/* </a> */}
           </li>
           <li>
-            Pioneered the first{" "}
-            {/* <a href="https://curia.vestafinance.xyz/t/rfc-new-interest-rate-framework/274"> */}
-            real-time market-trailing interest rate mechanism
-            {/* </a> */}
-            for a stablecoin, navigated complex stakeholder landscape of
-            engineering, legal, investors and users to implement the design,
-            achieving 8x revenue growth while preserving 95% of deposits.
+            Pioneered the first real-time market-trailing interest rate
+            mechanism for a stablecoin, achieving 8x revenue growth while
+            preserving 95% of deposits.
           </li>
           <li>
-            Pioneered a collateral strategy that{" "}
-            {/* <a href="https://curia.vestafinance.xyz/t/passed-glp-collateral-listing/64"> */}
-            returns yield to users
-            {/* </a> */}, resulting in 70% increase in TVL and $500,000 in
-            profits
+            Pioneered a collateral strategy that returns yield to users,
+            resulting in 70% increase in TVL and $500,000 in profits
           </li>
           <li>
-            Ultimate sunset resulted in more than{" "}
-            {/* <a href="https://curia.vestafinance.xyz/t/closed-sunset-of-vestas-protocol-action-plan-proposal/359"> */}
-            $14M in capital back to investors
-            {/* </a> */}, more than $2M than originally raised
+            Ultimate sunset resulted in more than $14M in capital back to
+            investors, more than $2M than originally raised
           </li>
         </ul>
       </section>
