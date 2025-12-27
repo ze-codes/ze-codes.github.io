@@ -12,7 +12,7 @@ const experiences = [
     description:
       "Working as a growth lead at Ostium, a perp dex focusing on RWA.",
     accomplishments: [],
-    technologies: ["DeFi", "Growth", "BD"],
+    technologies: ["Growth", "BD"],
   },
   {
     id: "2",
@@ -23,7 +23,7 @@ const experiences = [
     description:
       "Working as a data-focused product consultant at Sosovalue's SoDEX, a CLOB perp dex.",
     accomplishments: [],
-    technologies: ["Product", "Data", "DeFi"],
+    technologies: ["Product", "Data", "Perp Dex"],
   },
   {
     id: "3",
@@ -38,7 +38,12 @@ const experiences = [
       "Generated US$6m+ in profits over 1.5 years",
       "Grew community from 0 to 30,000 members in 3 months",
     ],
-    technologies: ["Solidity", "React", "TypeScript", "DeFi"],
+    technologies: [
+      "Partnership",
+      "Product Strategy",
+      "Growth",
+      "DeFi Protocol Design",
+    ],
     learnMore: "/vesta-learnings",
   },
   {
@@ -54,7 +59,7 @@ const experiences = [
       "Integrated 100+ DeFi protocols into the platform",
       "Led integration framework reducing dev time by 40%",
     ],
-    technologies: ["React", "Node.js", "TypeScript", "Web3"],
+    technologies: ["React", "Node.js", "TypeScript", "Solidity"],
   },
 ];
 
