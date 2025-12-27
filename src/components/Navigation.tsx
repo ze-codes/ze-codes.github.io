@@ -52,7 +52,9 @@ export function MobileNavigation() {
             <li key={item.name}>
               <NavLink
                 to={item.href}
-                className={`${styles.mobileNavLink} ${isActive ? styles.mobileActive : ""}`}
+                className={`${styles.mobileNavLink} ${
+                  isActive ? styles.mobileActive : ""
+                }`}
               >
                 {item.name}
               </NavLink>
@@ -63,4 +65,3 @@ export function MobileNavigation() {
     </nav>
   );
 }
-
