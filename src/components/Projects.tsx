@@ -29,7 +29,7 @@ const projects = [
       "A real-time valuation chart tracking MSTR's market cap vs the net asset value of their BTC holding, click to view the chart and my original analysis.",
     image: "images/mstr-btc.jpg",
     url: "https://ze-codes.github.io/mstr-vs-btc",
-    // technologies: ["React", "Chart.js", "API"],
+    technologies: ["Equity Research"],
   },
   {
     id: "3",
@@ -132,16 +132,6 @@ function ProjectCard({ project }: { project: Project }) {
             ))}
           </div>
         )}
-        <div className={styles.linkIcon}>
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-          </svg>
-        </div>
       </div>
     </a>
   );

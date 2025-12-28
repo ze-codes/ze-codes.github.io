@@ -12,7 +12,7 @@ const experiences = [
     description:
       "Working as a growth lead at Ostium, a perp dex focusing on RWA.",
     accomplishments: [],
-    technologies: ["Growth", "BD"],
+    technologies: ["Growth", "Business Development"],
   },
   {
     id: "2",
@@ -23,7 +23,7 @@ const experiences = [
     description:
       "Working as a data-focused product consultant at Sosovalue's SoDEX, a CLOB perp dex.",
     accomplishments: [],
-    technologies: ["Product", "Data", "Perp Dex"],
+    technologies: ["Product", "Data"],
   },
   {
     id: "3",
